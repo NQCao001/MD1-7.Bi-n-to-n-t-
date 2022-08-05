@@ -11,6 +11,8 @@
     <button onclick="hieu()">Trừ</button>
     <button onclick="tich()">Nhân</button>
     <button onclick="thuong()">Chia</button>
+    <br>
+    <button type="reset" onclick="ql()">Reste</button>
     <p id="trave">Result:</p>
 <script>
 
@@ -37,6 +39,11 @@
         let giatri2 =parseFloat(document.getElementById("so2").value)
         e= giatri1/giatri2
         document.getElementById("trave").innerHTML="Result: "+e
+    }
+    function ql(){
+        document.getElementById("so1").value=""
+        document.getElementById("so2").value=""
+        document.getElementById("trave").innerHTML="Result: "
     }
 </script>
 </body>
